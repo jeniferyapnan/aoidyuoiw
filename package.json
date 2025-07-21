@@ -1,0 +1,12 @@
+{
+  "name": "api-kakros-vercel",
+  "version": "1.0.0",
+  "description": "API kakros di Vercel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
