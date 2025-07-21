@@ -7,7 +7,7 @@ const path = require('path'); // Peta buat nyari file
 const app = express();
 
 // Bikin endpoint utama
-app.get('/api/kakros', (req, res) => {
+app.get('/api/waifu', (req, res) => {
   // --- INI BAGIAN YANG DIPERBAIKI ---
   // Kita suruh dia nyari db.json di 'kamar' yang sama dengan index.js
   const dbPath = path.join(__dirname, 'db.json');
