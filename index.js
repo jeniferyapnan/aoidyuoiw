@@ -21,7 +21,7 @@ app.get('/api/kakros', (req, res) => {
     
     try {
       const database = JSON.parse(data);
-      const images = database.kakros;
+      const images = database.waifu;
 
       if (!images || images.length === 0) {
         return res.status(404).json({ error: 'Database gambar kosong.' });
@@ -43,7 +43,7 @@ app.get('/api/kakros', (req, res) => {
 
 // Endpoint buat ngetes
 app.get('/', (req, res) => {
-  res.send('Server API kakros buat Vercel udah nyala! (Versi Perbaikan Final)');
+  res.send('Server API waifu buat Vercel udah nyala! (Versi Perbaikan Final)');
 });
 
 // Jalanin servernya
