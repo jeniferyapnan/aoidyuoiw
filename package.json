@@ -1,7 +1,7 @@
 {
-  "name": "api-kakros-vercel",
+  "name": "api-waifu-vercel",
   "version": "1.0.0",
-  "description": "API kakros di Vercel",
+  "description": "API waifu di Vercel",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
