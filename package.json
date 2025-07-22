@@ -1,12 +1,13 @@
 {
-  "name": "api-waifu-vercel",
-  "version": "1.0.0",
-  "description": "API waifu di Vercel",
+  "name": "swaifu-api-dashboard",
+  "version": "2.0.0",
+  "description": "Dashboard API Gambar Keren",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "axios": "^1.6.8"
   }
 }
