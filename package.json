@@ -1,14 +1,12 @@
 {
-  "name": "swaifu-api-local",
-  "version": "3.0.0",
-  "description": "API Gambar Lokal Anti Gagal",
+  "name": "api-jkt48-vercel",
+  "version": "1.0.0",
+  "description": "API JKT48 di Vercel",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "axios": "^1.6.8",
-    "mime-types": "^2.1.35"
+    "express": "^4.18.2"
   }
 }
