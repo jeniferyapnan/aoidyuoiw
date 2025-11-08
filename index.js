@@ -6,13 +6,10 @@ const path = require('path'); // Peta buat nyari file
 // Inisialisasi aplikasi server
 const app = express();
 
-// Bikin endpoint utama
+// --- INI ENDPOINT API JKT48 LO (TETAP ADA) ---
 app.get('/api/jkt48', (req, res) => {
-  // --- INI BAGIAN YANG DIPERBAIKI ---
-  // Kita suruh dia nyari db.json di 'kamar' yang sama dengan index.js
   const dbPath = path.join(__dirname, 'db.json');
 
-  // Baca file 'db.json' pake alamat yang udah bener
   fs.readFile(dbPath, 'utf8', (err, data) => {
     if (err) {
       console.error("Waduh, gabisa baca db.json:", err);
@@ -41,9 +38,10 @@ app.get('/api/jkt48', (req, res) => {
   });
 });
 
-// Endpoint buat ngetes
+// --- INI ENDPOINT BUAT HOMEPAGE (BARU) ---
+// Kalo ada yang akses '/', kirim file index.html
 app.get('/', (req, res) => {
-  res.send('Server API JKT48 buat Vercel udah nyala! (Versi Perbaikan Final)');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Jalanin servernya
